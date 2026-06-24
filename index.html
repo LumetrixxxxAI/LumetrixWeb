@@ -58,7 +58,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);border-bo
 
 /* HERO */
 .hero{padding:80px 0 72px;text-align:center;border-bottom:1px solid var(--border)}
-.hero-logo{display:block;width:480px;height:auto;object-fit:contain;margin:0 auto 36px}
+.hero-logo{display:block;width:min(340px,85vw);height:auto;object-fit:contain;margin:0 auto 28px}
 .hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:400;line-height:1.1;color:var(--text);letter-spacing:-.01em;margin-bottom:16px}
 .hero h1 em{font-style:italic;color:var(--blue)}
 .hero-sub{font-size:1.05rem;color:var(--muted);line-height:1.72;max-width:520px;margin:0 auto 48px;font-weight:300}
@@ -157,10 +157,9 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
 }
 @media(max-width:640px){
   .nav-links,.nav-cta{display:none}.hb{display:flex}
-  .hero-logo{display:block;width:480px;height:auto;object-fit:contain;margin:0 auto 36px}
+  .hero-logo{display:block;width:min(340px,85vw);height:auto;object-fit:contain;margin:0 auto 28px}
   .ft-top{grid-template-columns:1fr}.ft-bot{flex-direction:column}
-  .fg-2{grid-template-columns:1fr}
-  .W{padding:0 20px}
+  .fg-2{grid-template-columns:1fr}.W{padding:0 18px}.hero h1{font-size:2rem}.hero-sub{font-size:.9rem}
 }
 
 .svc-card .svc-link svg{transition:transform .2s ease}
